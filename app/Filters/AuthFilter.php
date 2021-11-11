@@ -12,7 +12,7 @@ class AuthFilter implements FilterInterface
     {
         $session = session();
         if ($session->get('log') != TRUE) {
-            return redirect()->to('/login');
+            return redirect()->to('/login/index');
         }
     }
 
